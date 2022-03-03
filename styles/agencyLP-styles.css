@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(/assets/header-wave1.svg), url(/assets/header-wave2.svg), url(/assets/bloob-1.svg), url(/assets/bloob-2.svg);
+    background-position: 100%, 100%, 20%, 20%;
+    background-repeat: no-repeat;
+    background-position-x: right, right, left, right;
+    background-position-y: top, top, 30%, 80%;
+}
+
+/* header and mutual styles */
+header {
+    display: grid;
+    margin-left: 10%;
+    margin-bottom: 0%;
+    grid-template-areas:
+        "logo nav"
+        "headerSectionTitle headerSectionTitle"
+        "heroSubHeader heroImage"
+        "sectionDescription heroImage"
+        "button heroImage";
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 50px 50px 2fr 150px;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #AAAAAB;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+a:hover {
+    color: black;
+}
+
+.button {
+    width: 194px;
+    height: 58px;
+
+    text-align: left;
+    padding-left: 15px;
+    background: #F78CB6;
+    border-radius: 4px;
+    border: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.02em;
+    background-image: url(/assets/button-arrow.svg), url(/assets/button-rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: 85%, 90%;
+    color: #FFFFFF;
+}
+
+.button:hover {
+    color: black;
+}
+
+.subHeader {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: #56597A;
+}
+
+.sectionDescription {
+    justify-content: flex-start;
+    align-content: flex-start;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 160% */
+    letter-spacing: 0.02em;
+
+    color: #919299;
+}
+
+.headerSectionTitle {
+    grid-area: headerSectionTitle;
+    margin-top: 10%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+
+    color: #F78CB6;
+}
+
+.logo {
+    grid-area: logo;
+    align-self: flex-end;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 10%;
+    width: 106px;
+    height: 30px;
+    left: 133px;
+    top: 57px;
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #56597A;
+}
+
+.logoRed {
+    color: #F087B1;
+}
+
+.nav {
+    grid-area: nav;
+    margin-right: 5%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+
+    text-align: center;
+    justify-content: flex-end;
+    justify-items: center;
+    align-content: space-around;
+    justify-self: flex-end;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 30px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+
+}
+
+.heroImage {
+    grid-area: heroImage;
+    background-image: url(/assets/HeroImage.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    margin-right: 15%;
+}
+
+.headerTitleUnderline {
+    width: 36px;
+    height: 3px;
+    text-decoration: underline;
+    color: #F087B1;
+}
+
+
+.heroSubHeader {
+    grid-area: heroSubHeader;
+    margin-top: 12%;
+    padding-top: 5%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 74px;
+    color: #56597A;
+}
+
+.header .sectionDescription {
+    grid-area: sectionDescription;
+    margin-top: 5%;
+}
+
+.header .button {
+    grid-area: button;
+    margin-top: -20%;
+}
+
+/* Our Services Section */
+.serviceSection {
+    display: grid;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 5fr 5fr 5fr 5fr;
+    grid-template-rows: 20px 50px 50px 1fr 1fr;
+    gap: 2rem;
+    grid-template-areas: "sectionTitle sectionTitle sectionTitle sectionTitle"
+        "subHeader subHeader subHeader subHeader"
+        "designService developmentService brandingService illustrationService"
+        "designService developmentService brandingService illustrationService"
+        "designService developmentService brandingService illustrationService";
+}
+
+.serviceSection .sectionTitle {
+    grid-area: sectionTitle;
+    text-align: center;
+    align-self: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+
+    color: #F78CB6;
+}
+
+.serviceSection .subHeader {
+    grid-area: subHeader;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.serviceIcon {
+    margin: 5%;
+}
+
+#designService {
+    grid-area: designService;
+}
+
+#developmentService {
+    grid-area: developmentService;
+
+}
+
+#brandingService {
+    grid-area: brandingService;
+
+}
+
+#illustrationService {
+    grid-area: illustrationService;
+}
+
+.servicePannel {
+    background-color: #FFF1F9;
+    border-radius: 10px;
+}
+
+.servicePannel:hover {
+    background-color: #F78CB6;
+    box-shadow: 0 0 20px #F78CB6;
+    color: #FFFFFF;
+}
+
+.servicePannel:hover::after {
+    content: url(/assets/LearnMore.svg);
+
+    margin-left: 25%;
+}
+
+img {
+    margin-top: 10%;
+    margin-left: 35%;
+    transform: translate(20%, 20%)
+}
+
+.serviceName {
+    grid-area: serviceName;
+    align-self: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 72px;
+    width: max-content;
+    /* identical to box height, or 212% */
+
+    color: #56597A;
+}
+
+.serviceDescription {
+    grid-area: serviceDescription;
+    margin-bottom: 20%;
+    align-self: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 150% */
+    color: #919299;
+}
+
+.textWrapper {
+    text-align: center;
+}
+
+
+/* Our design section */
+.designSection {
+    display: grid;
+    margin: 10%;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 50px 1fr 100px;
+    gap: 1rem;
+    grid-template-areas: ". sectionTitle"
+        "designSectionImage designSectionTextWrapper"
+        "designSectionImage button";
+}
+
+.designSection .sectionTitle {
+    grid-area: sectionTitle;
+    text-align: left;
+    margin-bottom: 10%;
+    justify-content: center;
+    align-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+
+    color: #F78CB6;
+}
+
+.designSectionTextWrapper {
+    grid-area: designSectionTextWrapper;
+    align-content: center;
+    justify-content: end;
+}
+
+.designSection .sectionDescription {
+    text-align: justify;
+    align-self: flex-start;
+    margin-top: 10%;
+}
+
+#designSectionImage {
+    margin-right: 10%;
+    grid-area: designSectionImage;
+    background-image: url(/assets/design-section-image.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.designSection .button {
+    grid-area: button;
+    margin-top: 5%;
+}
+
+
+/* footer styles */
+.footer {
+    margin-left: 10%;
+    display: grid;
+    margin-bottom: 0;
+    grid-template-columns: 3fr repeat(3, 2fr);
+    grid-template-rows: 50px 3fr 3fr;
+    grid-template-areas: "address resources about helpfulLinks"
+        "address resources about helpfulLinks"
+        "socialMediaWrapper resources about helpfulLinks";
+    background-image: url(/assets/footer-bg.svg), url(/assets/footer-bg-line.svg);
+    background-repeat: no-repeat;
+    background-size: 100%, 110%;
+}
+
+.address {
+    grid-area: address;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+    letter-spacing: 0.02em;
+
+    color: #919299;
+}
+
+#footerLogo {
+    margin-bottom: 5%;
+}
+
+.socialMediaHeader {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    /* identical to box height, or 160% */
+    letter-spacing: 0.02em;
+
+    color: #919299;
+}
+
+.resources {
+    grid-area: resources;
+}
+
+.about {
+    grid-area: about;
+}
+
+.helpfulLinks {
+    grid-area: helpfulLinks;
+}
+
+.socialMediaWrapper {
+    grid-area: socialMediaWrapper;
+    background-image: url(/assets/Social-media.svg);
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: 50%;
+
+}
+
+.footerLinks {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+    letter-spacing: 0.02em;
+
+    color: #919299;
+}
+
+.boldFooterTitle {
+    margin: 10%;
+    font-weight: 500;
+    font-size: 24px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.02em;
+
+    color: #56597A;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+/* lowest bar */
+.copyrightBar {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 50px;
+    grid-template-areas: "copyrightSection language";
+
+    background: #F78CB6;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 214% */
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.copyrightSection {
+    grid-area: copyrightSection;
+    padding-left: 10%;
+    padding-top: 10px;
+}
+
+.language {
+    grid-area: language;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10%;
+    justify-content: right;
+    align-items: flex-end;
+    background-image: url(/assets/languagePict.svg);
+    background-size: 5%;
+    background-position: 78%;
+    background-repeat: no-repeat;
+}
+
+select {
+    color: #FFFFFF;
+    background-color: #F78CB6;
+    border: 0;
+}
+
+option {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+
+    /* .teamworkSection {
+    grid-area: teamworkSection;
+    background-color: goldenrod;
+    width: 1162px;
+    height: 587px;
+}
+
+.testimonialsSection {
+    grid-area: testimonialsSection;
+    background-color: #ebdce2;
+    width: 1069px;
+    height: 449px;
+}
+
+.brandsSection {
+    grid-area: brandsSection;
+    background-color: azure;
+    width: 1170px;
+    height: 157px;
+}
+
+.subscriptions {
+    grid-area: subscriptions;
+    background-color: beige;
+    width: 1040px;
+    height: 297px;
+} */
