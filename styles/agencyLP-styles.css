@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(/assets/header-wave1.svg), url(/assets/header-wave2.svg), url(/assets/bloob-1.svg), url(/assets/bloob-2.svg);
+    background-image: url(../assets/header-wave1.svg), url(..//assets/header-wave2.svg), url(../assets/bloob-1.svg), url(/assets/bloob-2.svg);
     background-position: 100%, 100%, 20%, 20%;
     background-repeat: no-repeat;
     background-position-x: right, right, left, right;
@@ -55,7 +55,7 @@ a:hover {
     line-height: 30px;
     /* identical to box height, or 150% */
     letter-spacing: 0.02em;
-    background-image: url(/assets/button-arrow.svg), url(/assets/button-rectangle.svg);
+    background-image: url(../assets/button-arrow.svg), url(../assets/button-rectangle.svg);
     background-repeat: no-repeat;
     background-position: 85%, 90%;
     color: #FFFFFF;
@@ -145,7 +145,7 @@ a:hover {
 
 .heroImage {
     grid-area: heroImage;
-    background-image: url(/assets/HeroImage.svg);
+    background-image: url(../assets/HeroImage.svg);
     background-size: 90%;
     background-repeat: no-repeat;
     margin-top: 10%;
@@ -332,7 +332,7 @@ img {
 #designSectionImage {
     margin-right: 10%;
     grid-area: designSectionImage;
-    background-image: url(/assets/design-section-image.svg);
+    background-image: url(../assets/design-section-image.svg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -353,7 +353,7 @@ img {
     grid-template-areas: "address resources about helpfulLinks"
         "address resources about helpfulLinks"
         "socialMediaWrapper resources about helpfulLinks";
-    background-image: url(/assets/footer-bg.svg), url(/assets/footer-bg-line.svg);
+    background-image: url(../assets/footer-bg.svg), url(../assets/footer-bg-line.svg);
     background-repeat: no-repeat;
     background-size: 100%, 110%;
 }
@@ -398,7 +398,7 @@ img {
 
 .socialMediaWrapper {
     grid-area: socialMediaWrapper;
-    background-image: url(/assets/Social-media.svg);
+    background-image: url(../assets/Social-media.svg);
     background-repeat: no-repeat;
     background-position-x: 5%;
     background-position-y: 50%;
@@ -465,7 +465,7 @@ li {
     padding-right: 10%;
     justify-content: right;
     align-items: flex-end;
-    background-image: url(/assets/languagePict.svg);
+    background-image: url(../assets/languagePict.svg);
     background-size: 5%;
     background-position: 78%;
     background-repeat: no-repeat;
